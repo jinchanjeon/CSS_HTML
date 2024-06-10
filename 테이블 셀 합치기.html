@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        5. 테이블 셸 합치기
+         5-1. 세로로 셸 합치기
+         - 형식: 
+            
+            <td rowspan = "n"> </td> : n은 합칠 셸의 수
+
+            <th rowspan = "n"> </th>
+
+        - ex)           한국        영국
+             수도       
+                        서울        런던
+
+         5-2. 가로로 셸 합치기
+         - 형식:
+
+            <td colspan = "n"> </td> : n은 합칠 셸의 수
+
+            <th colspan = "n"> </th>
+
+         - ex)        수도
+                한국        영국
+                서울        런던
+
+    -->
+
+    <table border = "2">
+        <tr>
+            <th rowspan = "2">
+                수도
+            </th>
+            <th >
+                한국
+            </th>
+            <th>
+                영국
+            </th>
+        </tr>
+        <tr>
+            <td>
+                서울
+            </td>
+            <td>
+                런던
+            </td>
+        </tr>
+    </table>
+
+<br><hr><br>
+
+    <table border = "1">
+        <tr>
+            <th colspan="2"> 수도 </th>
+        </tr>
+        <tr>
+            <th> 한국 </th>
+            <th> 영국 </th>
+        </tr>
+        <tr>
+            <td> 서울</td>
+            <td> 런던</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        시간 정보 입력 
+    
+        * 시간 정보를 입력하는 폼 요소
+        (2021년 4월 15일 밤 9시 30분(10초 32)을 설정하는 예)
+
+        ===================================================
+        type 속성값                입력 데이터         value의 형식
+        ===================================================
+        <input type = "month">  년/월               2021-04
+        <input type = "week">   년/몇번째 주        2021-w12
+        <input type = "date">   년/월/일            2021-04-15
+        <input type = "datetime-Local">
+                                해당 나라의 시간
+                                년/월/일/오전,오후/시/분/초/100분의 1초
+                                                    2021-04-15T10:53:10.20
+        <input type = "time">   시/분               10:53
+        
+
+
+    -->
+
+    <h3> 시간 정보 입력 </h3>
+    <hr>
+    초기 세팅 : 2021년 4월 15일 10시 53분(10초 32) <br>
+    시간을 변경해 주세요.
+
+    <hr>
+    <form>
+        <pre>
+            month: <input type= "month" value = "2021-04"><br>
+            wee: <input type ="week" value = "2021-W12"><br>
+            date: <input type ="date" value = "2021-04-15"><br>
+            time: <input type ="time" value = "10:53"><br>
+            local: <input type ="datetime-local" value = "2021-04-15T10:53:10.32"><br>
+        
+        </pre>
+    </form>
+
+</body>
+</html>

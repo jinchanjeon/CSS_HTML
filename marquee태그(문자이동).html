@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        6. 문자 이동시키는 태그
+        - <marquee> 태그 : html 문서에서 텍스트나 그림을 설정된 방향과 시간에 맞추어
+                            움직이게 하는 태그
+        - 형식 : <marquee> 텍스트 또는 이미지 </marquee>
+        - <marquee> 태그의 속성
+            1. width = "픽셀수" : 스크롤 영역의 너비
+            2. height = "픽셀수" : 스크롤 영역의 높이
+            3. direction = "up | down | left | right" : 움직이는 방향
+            4. behavior = "scroll | alternate | slide" : 
+                행동방식(움직이는 방향으로 사라짐 | 좌우 또는 상하로 왕복 | 
+                    스크롤 영역의 끝에 멈춤)
+            5. scrollamount = "픽셀수" : 스크롤 속도 
+            6. scrolldelay = "지연시간" : 스크롤과 스크롤 사이의 지연시간
+            7. loop = "숫자" : 스크롤의 반복 횟수
+            8. bgcolor = "색상명 or rgb값" : 스크롤 영역의 배경색
+
+    -->
+
+
+    <p>
+        <marquee >  
+           marquee속성을 사용하지 않았을 때 결과  오른쪽 방향으로 세번 반복 후 사라집니다. 배경 색은 노랑입니다.
+        </marquee>
+
+    </p>
+    <br><br><br>
+  
+    <p> 
+        <marquee width = "500" height ="20" direction= "right" behavior="
+        scroll" loop = "3", bgcolor = "yellow" scrpllamount = "5" scrolldelay = "2">  
+            오른쪽 방향으로 세번 반복 후 사라집니다. 배경 색은 노랑입니다.
+        </marquee>
+
+    </p>
+
+    <p> 
+        <marquee width = "500" height ="20" direction= "down" behavior="
+        scroll"  bgcolor = "blue" scrpllamount = "3" scrolldelay = "2">  
+            <font color = " white ">아래 방향으로 무한반복 반복 후 사라집니다. 배경 색은 파랑입니다. </font>
+        </marquee>
+
+    </p>
+
+
+</body>
+</html>

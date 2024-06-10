@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>HTML의 표준 속성
+        문서의 메타데이터, 데이터에 대해서 설명하는 데이터 
+        <!--
+            형식1 : <meta http-equiv ="속성값" content ="내용">
+            형식2 : <meta name = " 속성값" content="내용">   
+                * http-equiv : HTTP 헤더 정보를 기술
+                * name : 정보의 이름을 기술
+                * content : 정보의 내용을 기술
+                * content-language : 문서의 자연 언어
+                * date : 문서 작성 날짜
+                * expires : 문서의 만료 날짜
+                * last-modified : 문서의 마지막 수정 날짜
+                * location : 페이지로 이동
+                * refresh : 문서를 다시 로드람
+                * page-enter : 문서를 여는 순간
+                * revealtrans : 문서 전환 효과 설정
+                * blendtrans  : 점점 밝게 또는 점점 어둡게 부드럽 전환되도록 설정
+                * content-type : 표준 포멧인  MIME 타입을 기술
+                                 (text/html: HTML 타입,  text/css : CSS 타입, text/plain :  일반 텍스트 타입 등)   
+    
+            ex) <meta http-equiv = "content-language" content="ko">
+                <meta http-equiv = "date" content="Fri, 11 March 2021 10:33:11 GMT">
+                <meta http-equiv = "content-type" content="text/html; charset=UTF-8">
+                * 페이지 자동 이동
+                <meta http-equiv = "refresh" content="5; url=mypage.html">
+                => 5초 후 mypage.html로 이동시킴
+                * 화면 전환 시 다양한 효과 제공
+                <meta http-equiv = "page-enter" content="revealtrans(duration=3, transition= 23)">
+                => 문서를 여는 순간 23개 효과들 중에서 임의로 선택하여 3초동안 화면이 전환됨
+                <meta http-equiv = "page-exit" content="blendtrans(duration=0.5)">
+                => 문서를 닫는 순간 부드럽게 0.5초 동안 화면이 전환됨
+    
+                duration =  시간 : 전환 시간(초) 지정
+                transition = 효과 번호 : 효과 번호는 0~23개까지 총 24개가 있음
+                             효과 번호 23은 0~22까지 23개의 효과 중에서 임의로 선택함  
+    
+               * 문자 셋 지정
+               <meta http-equiv="content-type"  content="text/html"; charset=UTF-8">               
+    
+               * 검색 엔진에서 HTML 문서를 검색하기 위해 사용할 키워드 제공
+               <meta name = "keywords" content="html5, css3, javascript">
+                => 검색 엔진에서 html5, css3, javascript를 키워드로 사용하여 본 문서를 검색하도록 함
+               <meta name = "author" content="Hong">
+    
+        -->
+    </title>
+</head>
+<body>
+    HTML의 표준 속성 : 핵심 속성, 언어 속성, 키보드 속성
+
+        구분          속성                     설명                       비고
+        ==========================================================================
+        핵심 속성        title          요소의 제목             <base>, <head>, <html>, <meta>,
+                        style          요소의 스타일            <param>, <script>, <style>, <title>
+                        class          요소의 클래스 이름       태그는 사용 불가
+                        id             요소의 아이디
+
+        언어 속성        lang           요소 내용의 자연 언어           <base>, <frame>, <tr>, <frameset>
+                                        (ko:한국어, en-US: 미국어)    <hr>, <iframe>, <param>, <script>
+                        dir            요소 내용의 진행 방향            태그는 사용불가
+                                        (ltr : 좌->우, rtl: 우->좌)
+
+        키보드 속성      accesskey      단축키                          <a>, <area>, <button>, <input>
+                        tabindex        요소의 탭(tab)  순서            <object>, <select>, <textarea>
+                                                                        태그만 사용
+
+            태그이름    속성1               속성2         속성3             속성4
+        ex) <img        src = "heart.jpg"  width="100"   height = "50"    alt= "사랑합니다." >
+                        속성이름   속성값
+            <a title="HTML의 표준속성">   
+            <head lang ="ko" dir="ltr"> 테스트 </head>
+
+        * 주요 언어의 약어
+
+        언어      약어
+        ==============    
+        한국어      ko
+        영어        en
+        프랑스어    fr
+        이탈리어    it
+        라틴어      la
+</body>
+</html>
